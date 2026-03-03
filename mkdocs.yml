@@ -1,0 +1,24 @@
+site_name: 个人量化投研中心
+site_description: 每日自动抓取基金净值与 AI 估值研报
+site_author: Seu-pioneer
+
+theme:
+  name: material
+  features:
+    - navigation.tabs # 启用顶部导航栏
+    - navigation.top  # 启用返回顶部按钮
+    - search.suggest  # 启用搜索建议
+  palette:
+    # 强制使用科技感深色模式 (Slate)
+    - scheme: slate
+      primary: indigo
+      accent: blue
+
+# 配置 Markdown 扩展，支持数学公式、表格和代码高亮
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - admonition
